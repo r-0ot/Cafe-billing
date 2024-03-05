@@ -1,0 +1,83 @@
+body {
+    background: black url("Landscape.jpg") no-repeat fixed center/cover;
+    color: white;
+}
+.bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    background-color: rgba(0,0,0,0.5);
+}
+h1 {
+text-align: center;
+color: maroon;
+text-shadow: 0.2rem 0.2rem 0.2rem white;
+}
+th {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem;
+    color: darkgreen;
+    text-shadow: 0.2rem 0.1rem 0.2rem white;
+}
+td {
+    text-align: center;
+    padding: 0.25rem;
+}
+.gt {
+    display: flex;
+    justify-content: center;
+}
+#ttl {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+.drinks {
+    padding-left: 0.25rem;
+    font-size: 1.25rem;
+    color: rgb(31, 24, 88);
+    text-shadow: 0.1rem 0.1rem 0.15rem white;
+}
+#myBtn{
+    color: white;
+    background-color: darkgreen;
+    box-shadow: 0.2rem 0.1rem 0.2rem white;  
+    margin: 0.5rem 0; 
+}
+#myBtn:disabled{
+    background-color: rgba(144,195,144,0.7);
+}
+#cancel{
+    color: white;
+    background-color: maroon;  
+    box-shadow: 0.2rem 0.1rem 0.2rem white; 
+}
+@media (max-width: 1020px){
+body {
+ background-size: 120% auto;
+    }
+}
+@media (max-width: 790px){
+    body {
+background-size: 160% auto;
+        }
+    }
+@media (max-width: 560px){
+        body {
+    background-image: url("Portrait.jpg");
+    background-size: cover;
+            }
+     .bg {
+    margin: auto;
+    max-width: 350px;
+}   
+
+th{
+    display:none;
+}
+input[type="number"]{
+  width:50px;  
+}
+ }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cafe Billing App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="bg">
+      <h1>Order Menu</h1>
+      <div class="box">
+        <table>
+          <tr>
+            <th></th>
+            <th>Drinks Name</th>
+            <th>Amount</th>
+            <th>Quantity</th>
+            <th>Sub Total</th>
+          </tr>
+          <tr>
+            <td class="drinks">
+              <p>Hot Drinks</p>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="americano" onclick="disableInput(event)"  name="americano" value="120"></input></td>
+            <td>Americano</td>
+            <td>$120</td>
+            <td><input type="number" placeholder="Qty" onchange="calculateSp('quantity1')" disabled id="quantity1" name="quantity1"></td>
+            <td id="sb1">$0</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="capuccino" name="capuccino" onclick="disableInput(event)" value="180"></input></td>
+            <td>Capuccino</td>
+            <td>$180</td>
+            <td><input type="number" placeholder="Qty" class="input" id="quantity2" onchange="calculateSp('quantity2')" disabled name="quantity2"></td>
+            <td id="sb2">$0</td>
+          </tr>
+          <tr>
+            <td class="drinks">
+              <p>Cold Drinks</p>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="mocha" name="iced mocha"onclick="disableInput(event)" value="140"></input></td>
+            <td>Iced Mocha</td>
+            <td>$140</td>
+            <td><input type="number" placeholder="Qty" class="input" id="quantity3" onchange="calculateSp('quantity3')" disabled name="quantity3"></td>
+            <td id="sb3">$0</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="latte" name="iced latte" onclick="disableInput(event)" value="160"></input></td>
+            <td>Iced Latte</td>
+            <td>$160</td>
+            <td><input type="number" placeholder="Qty" class="input" id="quantity4" onchange="calculateSp('quantity4')" disabled name="quantity4"></td>
+            <td id="sb4">$0</td>
+          </tr>
+        </table>
+        <div class="gt">
+          <p class="drinks">Grand Total</p>
+          <p id="ttl">$0</p>
+        </div>
+      </div>
+      <div class="btn">
+        <button id="myBtn" disabled onclick="Total()">Total</button>
+        <button id="cancel" onclick="Cancel()">Cancel</button>
+      </div>
+    </div>
+    <script src="CafeBilling.js"></script>
+  </body>
+</html>
